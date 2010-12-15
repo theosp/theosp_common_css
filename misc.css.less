@@ -8,3 +8,19 @@
  * http://www.benweaver.com/blog/unselectable-text.html
  */
 [unselectable=on] { -moz-user-select: none; -khtml-user-select: none; user-select: none; }
+
+.rounded_corners (@radius: 5px) {
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.not_selectable {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+.background-image (@url: '', @color: transparent) {
+    background: url(@url) no-repeat scroll @color;
+}
