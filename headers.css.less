@@ -19,9 +19,33 @@
 /* }}} */
 
 /* Background Image {{{ */
+
+/* obsolete {{{ */
 .background-image (@url: '', @color: transparent) {
     background: url(@url) no-repeat scroll @color;
 }
+/* }}} */
+
+/* no-repeat background {{{ */
+.no-repeat-background-image (@url: 'none', @color: transparent) {
+    background: @url no-repeat scroll @color;
+}
+/* }}} */
+
+/* repeat background {{{ */
+.repeat-background-image (@url: 'none', @color: transparent) {
+    background: @url repeat scroll @color;
+}
+
+.repeat-x-background-image (@url: 'none', @color: transparent) {
+    background: @url repeat-x scroll @color;
+}
+
+.repeat-y-background-image (@url: 'none', @color: transparent) {
+    background: @url repeat-y scroll @color;
+}
+/* }}} */
+
 /* }}} */
 
 /* }}} */
